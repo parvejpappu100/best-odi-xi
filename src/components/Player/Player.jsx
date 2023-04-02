@@ -2,7 +2,8 @@ import React from 'react';
 import './Player.css'
 
 const Player = (props) => {
-    const {img , name , price_cr , role , odi_ranking} = props.player ; 
+    const details = props.details;
+    const {img , name , price_cr , role , odi_ranking , id } = props.player ; 
     return (
         <>
             <div className='shadow-2xl'>
@@ -14,7 +15,7 @@ const Player = (props) => {
                     <h6>Icc rank based by role : {odi_ranking}</h6>
                     <div className='flex justify-between my-2'>
                         <div>
-                            <button className="btn btn-ghost ">See More</button>
+                            <label onClick={() => {details(props.player)}} htmlFor="my-modal-5" className="btn btn-ghost">See More</label>
                         </div>
                         <div>
                             <button className="btn btn-ghost">Add to draft</button>
