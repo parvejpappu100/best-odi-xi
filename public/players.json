@@ -78,7 +78,7 @@
     {
         "id": 63,
         "odi_run":"4647",
-        "role": "WK-Batter",
+        "role": "Batter",
         "name": "JOS BUTTLER",
         "price_cr": 13,
         "battingStyle": "Right Hand",
@@ -116,7 +116,7 @@
     {
         "id": 755,
         "odi_run":"532",
-        "role": "Batting Allrounder",
+        "role": "Al Rounder",
         "name": "DARYL MITCHELL",
         "price_cr": 2,
         "battingStyle": "Right Hand",
@@ -135,7 +135,7 @@
     {
         "id": 12,
         "odi_run":"5998",
-        "role": "WK-Batter",
+        "role": "Batter",
         "name": "QUINTON DE KOCK",
         "price_cr": 10,
         "battingStyle": "Left Hand",
@@ -173,7 +173,7 @@
     {
         "id": 88,
         "odi_run":"733",
-        "role": "WK-Batter",
+        "role": "Batter",
         "name": "DEVON CONWAY",
         "price_cr": 3,
         "battingStyle": "Left Hand",

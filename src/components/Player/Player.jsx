@@ -3,9 +3,9 @@ import './Player.css'
 
 const Player = (props) => {
     const details = props.details;
-    const {img , name , price_cr , role , odi_ranking , id } = props.player ; 
+    const {img , name , price_cr , role , odi_ranking  } = props.player ; 
     return (
-        <>
+        <>  
             <div className='shadow-2xl'>
                 <img className='player-img w-full' src={img} />
                 <div className='p-2'>
