@@ -19,29 +19,38 @@ const Players = () => {
     return (
         <>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 px-4 lg:container mx-auto my-5'>
-                <div className='col-span-2 row-span-2 grid grid-cols-1 md:grid-cols-2 gap-5 '>
-                    {
-                        alrounder.map(player => <Player
-                        key = {player.id}
-                        player = {player}
-                        details = {modalDetails}
-                        ></Player>)
-                    }
-                    {
-                        batter.map(player => <Player
-                        key = {player.id}
-                        player = {player}
-                        details = {modalDetails}
-                        ></Player>)
+                <div className='col-span-2 row-span-2  '>
+                    <h3 className='text-2xl font-bold mb-4'>AL Rounder</h3>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+                        {
+                            alrounder.map(player => <Player
+                            key = {player.id}
+                            player = {player}
+                            details = {modalDetails}
+                            ></Player>)
+                        }
+                    </div>
+                    <h3  className='text-2xl font-bold my-4'>BATTER</h3>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+                        {
+                            batter.map(player => <Player
+                            key = {player.id}
+                            player = {player}
+                            details = {modalDetails}
+                            ></Player>)
                         
-                    }
-                    {
-                        bowler.map(player => <Player
-                        key = {player.id}
-                        player = {player}
-                        details = {modalDetails}
-                        ></Player>)  
-                    }
+                        }
+                    </div>
+                    <h3 className='text-2xl font-bold my-4'>BOWLER</h3>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+                        {
+                            bowler.map(player => <Player
+                            key = {player.id}
+                            player = {player}
+                            details = {modalDetails}
+                            ></Player>)  
+                        }
+                    </div>
                 </div>
                 <div className='border border-gray-400 sticky top-3'>
                     <h3 className='text-2xl text-center'>Draft Summary</h3>

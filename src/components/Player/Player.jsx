@@ -6,7 +6,7 @@ const Player = (props) => {
     const {img , name , price_cr , role , odi_ranking  } = props.player ; 
     return (
         <>  
-            <div className='shadow-2xl'>
+            <div className='shadow-xl'>
                 <img className='player-img w-full' src={img} />
                 <div className='p-2'>
                     <h3 className='text-2xl font-medium my-1'>{name}</h3>
