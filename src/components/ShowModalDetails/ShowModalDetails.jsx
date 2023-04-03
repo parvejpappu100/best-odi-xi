@@ -15,6 +15,7 @@ const ShowModalDetails = ({detail}) => {
                         <h6 className='text-lg font-medium'>Latest Rating : {ratings}</h6>
                         <div className=' font-bold my-2 flex flex-col lg:flex-row gap-5'>
                             <div className='bg-white p-2 rounded-xl w-full'>
+                                <h6 className='text-center'>Batting Status</h6>
                                 <h6>Batting Style : {battingStyle}</h6>
                                 <h6>Odi Centuries : {century_odi ? century_odi : "No century yet !"}</h6>
                                 <h6>Odi Runs : {odi_run ? odi_run : "He don't bat yet !"}</h6>
@@ -22,6 +23,7 @@ const ShowModalDetails = ({detail}) => {
                                 <h6>Highest Score : {highest_score}</h6>
                             </div>
                             <div className='bg-white p-2 rounded-xl w-full'>
+                                <h6 className='text-center'>Bowling Status</h6>
                                 <h6>Bowling Style : {bowling_style ? bowling_style : "He can't bowl !!"}</h6>
                                 <h6> Odi Wickets : {wickets_odi ? wickets_odi : "No Wickets"}</h6>
                                 <h6>Bowling Average : {bowling_avg ? bowling_avg : "No Average"}</h6>
