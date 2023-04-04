@@ -12,7 +12,7 @@ const Player = (props) => {
                     <h3 className='text-2xl font-medium my-1'>{name}</h3>
                     <h6 className='text-xl'>Role : {role}</h6>
                     <h6 className='my-1 font-medium'>Price : {price_cr} Crore</h6>
-                    <h6>Icc rank based by role : {odi_ranking}</h6>
+                    <h6>Icc rank based by role : {odi_ranking ? odi_ranking : "No data available"}</h6>
                     <div className='flex justify-between my-2'>
                         <div>
                             <label onClick={() => {details(props.player)}} htmlFor="my-modal-5" className="btn btn-ghost">See More</label>

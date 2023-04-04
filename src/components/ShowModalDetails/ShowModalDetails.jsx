@@ -11,8 +11,8 @@ const ShowModalDetails = ({detail}) => {
                 <div className='flex flex-col-reverse md:flex-row gap-5'>
                     <div className='shadow-xl w-full p-2 border border-red-700 bg-red-100 '>
                         <h6 className='text-xl font-bold'>Role : {role}</h6>
-                        <h6 className='text-xl font-bold'>Icc Ranking : {odi_ranking}</h6>
-                        <h6 className='text-lg font-medium'>Latest Rating : {ratings}</h6>
+                        <h6 className='text-xl font-bold'>Icc Ranking : {odi_ranking ? odi_ranking : "No data available"}</h6>
+                        <h6 className='text-lg font-medium'>Latest Rating : {ratings ? ratings : "No data available"}</h6>
                         <div className=' font-bold my-2 flex flex-col lg:flex-row gap-5'>
                             <div className='bg-white p-2 rounded-xl w-full'>
                                 <h6 className='text-center'>Batting Status</h6>
